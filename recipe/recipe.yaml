@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   python_min: "3.11"
-  version: "0.0.3"
+  version: "0.0.4"
 
 package:
   name: ramp-batman
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/r/ramp-batman/ramp_batman-${{ version }}.tar.gz
-  sha256: 848e25f9ffca169884e84e5c94e360b8fdf1cf2e9bc1201876bb206291a4d924
+  sha256: 32769ba99f9485933d05d38d2c875877e77c656f9b876ade86be6d54114bd9b6
 
 build:
   number: 0
@@ -44,7 +44,7 @@ tests:
       imports:
         - batman
       pip_check: true
-      python_version: 
+      python_version:
         - ${{ python_min }}.*
         - "*"
 
