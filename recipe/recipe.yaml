@@ -27,13 +27,13 @@ requirements:
   run:
     - python >=${{ python_min }}
     - dask-core
+    - endf
     - matplotlib-base
     - more-itertools
     - multipledispatch
     - networkx
     - numpy
     - ramp-coremaker
-    - ramp-endf
     - ramp-isotopes
     - ramp-reactions
     - scipy
