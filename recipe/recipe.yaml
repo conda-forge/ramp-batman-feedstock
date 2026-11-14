@@ -27,7 +27,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - dask-core
-    - endf
+    - endf >=0.1.12
     - matplotlib-base
     - more-itertools
     - multipledispatch
