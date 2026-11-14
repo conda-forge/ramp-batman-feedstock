@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   python_min: "3.11"
-  version: "0.0.5"
+  version: "0.0.6"
 
 package:
   name: ramp-batman
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/r/ramp-batman/ramp_batman-${{ version }}.tar.gz
-  sha256: 34c76237a8be798d57eca17be2c72274a6b5eb6d3965a5a4fb5696b176e42546
+  sha256: 6eb967fcac726dabdaba7c49e82798dace6feaa83a101d9fa92fb8dfd919551f
 
 build:
   number: 0
@@ -27,7 +27,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - dask-core
-    - endf
+    - endf >=0.1.12
     - matplotlib-base
     - more-itertools
     - multipledispatch
